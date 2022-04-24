@@ -1,0 +1,14 @@
+christian-kohler.npm-intellisense
+dbaeumer.vscode-eslint
+eg2.vscode-npm-script
+ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-vscode.cmake-tools
+rebornix.ruby
+spmeesseman.vscode-taskexplorer
+twxs.cmake
+wingrunr21.vscode-ruby
+yzhang.markdown-all-in-one

@@ -1,0 +1,48 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "serve jekyll",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "bundle exec jekyll serve --trace"
+        },
+        {
+            "label": "install",
+            "type": "shell",
+            "command": "bundle install",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "watch jekyll",
+            "type": "shell",
+            "command": "bundle exec jekyll serve --trace --incremental --watch",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "bundle exec jekyll clean",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "clean & build",
+            "type": "shell",
+            "command": "bundle exec jekyll build",
+            "dependsOn": "[clean]",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}
